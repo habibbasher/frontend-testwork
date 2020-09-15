@@ -1,0 +1,32 @@
+.add-event {
+  margin-top: 3em;
+  justify-content: space-between;
+  &_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 8.5em;
+    & > span {
+      margin-right: 1em;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &_form {
+    width: 15em;
+    margin-left: 8.5em;
+    &-btn {
+      padding: 0.5em 2.5em;
+    }
+    &-error {
+      color: red;
+    }
+  }
+
+  &_preview {
+    margin-top: 0.5em;
+  }
+}

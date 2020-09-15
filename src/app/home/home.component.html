@@ -1,0 +1,18 @@
+<section class="home">
+  <h1 class="home-heading">Home</h1>
+  <div class="row home-body">
+    <div class="col-md-3 mb-3" *ngFor="let event of events$ | async">
+      <app-event-item
+        [name]="event.name"
+        [address]="event.address"
+        [date]="event.date"
+      ></app-event-item>
+    </div>
+    <div class="col-md-3 home-body_add-more" (click)="goToCreateNewEvent()">
+      <div class="card home-body_add-more-text">
+        <p class="home-body_add-more-text-icon">+</p>
+        <p>Add more</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+.home {
+  &-heading {
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+  }
+
+  &-body {
+    &_add-more {
+      :hover {
+        cursor: pointer;
+      }
+
+      &-text {
+        width: 12em;
+        height: 14em;
+        background-color: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &-icon {
+          font-size: 4em;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
